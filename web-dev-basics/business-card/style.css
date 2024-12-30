@@ -1,0 +1,27 @@
+body{
+    margin:20px;
+    font-family: Trebuchet MS, serif;
+    font-weight: bold;
+}
+
+.profile-img{
+    width: 150px;
+    border:3px solid darkblue;
+    background-color: teal;
+    border-radius: 5px;
+}
+
+.card{
+    display: flex;
+    width:400px;
+    margin: 0 auto;
+    padding:20px;
+    justify-content: space-around;
+    text-align: center;
+    background: #00B4D8;
+    color:#03045E;
+    border:8px solid #0077B6;
+
+}
+
+
