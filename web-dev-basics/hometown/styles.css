@@ -1,0 +1,76 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 10px;
+    text-align: center;
+    background: linear-gradient(#FFD100, #080401, #F9423A);
+    color: white;
+    font-family: "Poppins", serif;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+img {
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+#hero-section {
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 720px;
+    height: 350px;
+    background-image: url('./images/skyline.jpg');
+    background-size: cover;
+}
+
+#city-title {
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: #F5F5F5;
+    background-color: #090808;
+}
+
+#city-description {
+    padding: 10px 12px;
+    border-radius: 15px;
+
+
+    width: 400px;
+    color: #F9423A;
+    font-weight: bold;
+    background-color: #FED100;
+}
+
+#activity-heading {
+    color: #F5F5F5;
+    margin-top: 50px;
+}
+
+.activity-section {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.activity {
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #F5F5F5;
+}
