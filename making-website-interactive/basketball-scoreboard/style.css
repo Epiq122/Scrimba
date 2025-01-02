@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    background: #4C1D95;
+
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #EEEEEE
+
+}
+
+h2 {
+    font-family: "Cursed Timer ULiL", Verdana, Geneva, sans-serif;
+    font-size: 90px;
+    color: #F94f6d;
+
+}
+
+.container {
+
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.score {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background: #080001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+
+}
+
+.points-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.add-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #DDD6FE;
+    border-radius: 8px;
+
+
+}
+
+button {
+    font-family: "Cursed Timer ULiL", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #DDD6FE;
+}
+
+.clear-score {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #DDD6FE;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.clear-score:hover {
+    background: #7C3AED;
+}
