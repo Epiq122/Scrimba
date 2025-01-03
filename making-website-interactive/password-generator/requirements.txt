@@ -1,0 +1,8 @@
+1. generate 2 random passwords  when the user button is clicked
+2. each password should be 15 chars long
+
+
+extras:
+    set password length
+    copy on click
+    toggle symbols on or off
