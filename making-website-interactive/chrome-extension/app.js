@@ -2,6 +2,7 @@ const inputBtn = document.querySelector('#input-btn')
 const inputEl = document.querySelector('#input-el')
 const ulEl = document.querySelector('#ul-el')
 const deleteBtn = document.querySelector('#delete-btn')
+const tabBtn = document.querySelector('#tab-btn')
 
 
 let myLeads = []
@@ -11,9 +12,10 @@ const fragment = document.createDocumentFragment();
 //Local Storage
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem('leads'))
 
+// if the store has something in it
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
-    renderLeads()
+    render(myLeads)
 }
 
 inputBtn.addEventListener('click', () => {
@@ -23,27 +25,39 @@ inputBtn.addEventListener('click', () => {
 
     // saves my leads to local storage
     localStorage.setItem('leads', JSON.stringify(myLeads))
+    render(myLeads);
 
-    renderLeads();
-    console.log(localStorage.getItem('leads'))
 })
 
 deleteBtn.addEventListener('dblclick', () => {
     localStorage.clear()
     myLeads = []
-    renderLeads()
+    render(myLeads)
+
+})
+
+//tab section
+
+tabBtn.addEventListener('click', () => {
+    //this is to work with firefox
+    browser.tabs.query({active: true, currentWindow: true}, function (tabs) {
+        myLeads.push(tabs[0].url)
+        localStorage.setItem('leads', JSON.stringify(myLeads))
+        render(myLeads)
+    });
+
 
 })
 
 
-function renderLeads() {
+function render(leads) {
     ulEl.innerHTML = '';
-    for (let i = 0; i < myLeads.length; i++) {
+    for (let i = 0; i < leads.length; i++) {
         const newLi = document.createElement('li')
         const newAnchor = document.createElement('a')
 
-        newAnchor.href = myLeads[i] // sets the url
-        newAnchor.textContent = myLeads[i] // adds the text inside the anchor
+        newAnchor.href = leads[i] // sets the url
+        newAnchor.textContent = leads[i] // adds the text inside the anchor
         newAnchor.target = "_blank" // sets the target inside the anchor
 
         newLi.appendChild(newAnchor)
