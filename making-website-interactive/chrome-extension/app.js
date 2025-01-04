@@ -49,6 +49,17 @@ tabBtn.addEventListener('click', () => {
 
 })
 
+// tabBtn.addEventListener('click', () => {
+//     // Check which API is available (Chrome or Firefox)
+//     const browserAPI = chrome || browser;
+//
+//     browserAPI.tabs.query({active: true, currentWindow: true}, function (tabs) {
+//         myLeads.push(tabs[0].url)
+//         localStorage.setItem('leads', JSON.stringify(myLeads))
+//         render(myLeads)
+//     });
+// });
+
 
 function render(leads) {
     ulEl.innerHTML = '';
