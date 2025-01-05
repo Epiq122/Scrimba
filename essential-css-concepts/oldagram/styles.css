@@ -72,6 +72,13 @@ header {
 .social {
     width: 24px;
     height: 24px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+    cursor: pointer;
 }
 
 .social-container {
@@ -85,3 +92,4 @@ header {
     font-weight: 700;
     font-size: 13px;
 }
+
