@@ -1,0 +1,3 @@
+create 1 post
+use semantic html
+add hover effects to icons
