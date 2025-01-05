@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #282828;
+    font-family: "Montserrat", sans-serif;
+    background: whitesmoke;
+
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 30px 25px;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 25px;
+    gap: 10px;
+
+}
+
+li {
+    cursor: pointer;
+}
+
+
+header {
+    background: #282828;
+    color: whitesmoke;
+    width: 100%;
+    padding: 20px;
+}
+
+.icon {
+    width: 25px;
+}
+
+.align-right {
+    margin-left: auto;
+
+}
+
+.item-img {
+    display: block;
+    width: 100%;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+    /*padding: 10px 0;*/
+}
+
+
+.caption {
+    margin: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.img-banner {
+    position: absolute;
+    background-color: #cd6858;
+    color: whitesmoke;
+    top: 0;
+    left: 0;
+    padding: 10px;
+
+}
+
+.item {
+    position: relative;
+
+
+}
+
+button {
+    background-color: #cd6858;
+    font-weight: 700;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    /*margin: auto*/
+    align-self: center;
+
+}
+
+.chatbox-bg {
+    background-color: #dda15e;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #999;
+    display: flex;
+    position: fixed;
+    right: 6px;
+    bottom: 6px;
+
+
+}
+
+
+.chatbox-img {
+
+    margin: auto;
+    width: 50%;
+}
