@@ -23,6 +23,8 @@ inputBtn.addEventListener('click', () => {
     myLeads.push(value)
     inputEl.value = ''
 
+      =
+
     // saves my leads to local storage
     localStorage.setItem('leads', JSON.stringify(myLeads))
     render(myLeads);
@@ -76,6 +78,3 @@ function render(leads) {
     }
     ulEl.appendChild(fragment)
 }
-
-
-
